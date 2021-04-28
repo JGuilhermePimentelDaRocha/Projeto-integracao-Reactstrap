@@ -18,11 +18,11 @@ const img4 = {
   backgroundImage: `url('${ac4}')`
 }
 
-function Hotel() {
+function Section() {
   return (
 
     <section className="Section1">
-      <h3>Conheçao alguns dos nossos trabalhos</h3>
+      <h3>Conheça alguns dos nossos trabalhos</h3>
       <hr />
 
       <ul className="grid">
@@ -32,18 +32,8 @@ function Hotel() {
         <li className="small" style={img4}></li>
       </ul>
 
-      <ul className="grid">
-        <li className="small" style={img1}></li>
-        <li className="large" style={img2}></li>
-        <li className="large" style={img3}></li>
-        <li className="small" style={img4}></li>
-      </ul>
-
-
     </section>
-
-
 
   )
 }
-export default Hotel;
+export default Section;

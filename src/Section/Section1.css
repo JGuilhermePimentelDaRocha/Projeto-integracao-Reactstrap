@@ -20,10 +20,16 @@
   border: none;
 }
 
+.grid{
+  text-decoration: none;
+}
+
 .Section1 .grid {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  list-style:none;
+  
 }
 
 .Section1 .grid li {
@@ -33,10 +39,12 @@
   background-clip: content-box;
   background-size: cover;
   background-position: center;
+ 
 }
 
 .Section1 .grid li.small {
   flex-basis: 40%;
+  text-decoration: none;
 }
 
 .Section1 .grid li.large {

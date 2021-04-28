@@ -15,6 +15,7 @@ import {
 import Logo from "./img/logo.jpg";
 import "./Header.css";
 
+
 const Headers = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +23,7 @@ const Headers = (props) => {
 
     return (
         <div>
-            <Navbar color="info" dark expand="md">
+            <Navbar color="#" light expand="md">
                 <NavbarBrand href="/">
                     <img src={Logo} alt="Nathi Lup" Class="logoNav" />
                 </NavbarBrand>
