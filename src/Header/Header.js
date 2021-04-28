@@ -11,8 +11,9 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText
 } from 'reactstrap';
+import Logo from "./img/logo.jpg";
+import "./Header.css";
 
 const Headers = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +22,10 @@ const Headers = (props) => {
 
     return (
         <div>
-            <Navbar color="secondary" dark expand="md">
-                <NavbarBrand href="/">Nathi Lupe</NavbarBrand>
+            <Navbar color="info" dark expand="md">
+                <NavbarBrand href="/">
+                    <img src={Logo} alt="Nathi Lup" Class="logoNav" />
+                </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
@@ -49,8 +52,8 @@ const Headers = (props) => {
                   </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
+
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
                 </Collapse>
             </Navbar>
         </div>
