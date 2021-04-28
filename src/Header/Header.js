@@ -24,11 +24,12 @@ const Headers = (props) => {
     return (
         <div>
             <Navbar color="#" light expand="md">
-                <NavbarBrand href="/">
-                    <img src={Logo} alt="Nathi Lup" Class="logoNav" />
-                </NavbarBrand>
+
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
+                    <NavbarBrand href="/">
+                        <img src={Logo} alt="Nathi Lup" Class="logoNav" />
+                    </NavbarBrand>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
                             <NavLink href="#">Home</NavLink>
@@ -40,7 +41,7 @@ const Headers = (props) => {
                             <DropdownToggle nav caret>
                                 Produtos
                 </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu>
                                 <DropdownItem>
                                     Papelaria
                   </DropdownItem>
@@ -56,6 +57,7 @@ const Headers = (props) => {
 
                     </Nav>
                 </Collapse>
+
             </Navbar>
         </div>
     );
