@@ -1,48 +1,46 @@
 import React from "react";
-import ac1 from "../../img/ac1.jpg";
-import ac2 from "../../img/ac2.jpg";
-import ac3 from "../../img/ac3.jpg";
-import ac4 from "../../img/ac4.jpg";
-import "./Hotel.css";
+import ac1 from "./img/carrossel_1.png";
+import ac2 from "./img/carrossel_2.png";
+import ac3 from "./img/carrossel_3.png";
+import ac4 from "./img/carrossel_1.png";
+import "./Section1.css";
 
 const img1 = {
-  backgroundImage:`url('${ac1}')`
+  backgroundImage: `url('${ac1}')`
 }
 const img2 = {
-  backgroundImage:`url('${ac2}')`
+  backgroundImage: `url('${ac2}')`
 }
 const img3 = {
-  backgroundImage:`url('${ac3}')`
+  backgroundImage: `url('${ac3}')`
 }
 const img4 = {
-  backgroundImage:`url('${ac4}')`
+  backgroundImage: `url('${ac4}')`
 }
 
 function Hotel() {
   return (
- 
-<section className="hotel">
-    <h3>Conheçao o Hotel</h3>
-    <p>Feche os olhos e imagine o paraiso da Terra.
-        Sobral terra onde cada pessoa possui um Sol individual.</p>
-    <hr/>
 
-    <ul className="grid">
+    <section className="Section1">
+      <h3>Conheçao alguns dos nossos trabalhos</h3>
+      <hr />
+
+      <ul className="grid">
         <li className="small" style={img1}></li>
         <li className="large" style={img2}></li>
         <li className="large" style={img3}></li>
         <li className="small" style={img4}></li>
-    </ul>
+      </ul>
 
-    <ul className="grid">
+      <ul className="grid">
         <li className="small" style={img1}></li>
         <li className="large" style={img2}></li>
         <li className="large" style={img3}></li>
         <li className="small" style={img4}></li>
-    </ul>   
+      </ul>
 
 
-</section>
+    </section>
 
 
 

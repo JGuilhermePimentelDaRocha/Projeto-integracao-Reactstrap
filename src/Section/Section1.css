@@ -1,23 +1,18 @@
-.hotel {
+.Section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 50px;
 }
 
-.hotel h3 {
+.Section1 h3 {
   font-size: 2em;
   margin-bottom: 35px;
   text-align: center;
 }
 
-.hotel p {
-  max-width: 800px;
-  margin-bottom: 35px;
-  text-align: center;
-}
 
-.hotel hr {
+.Section1 hr {
   width: 200px;
   height: 2px;
   background-color: #191c03;
@@ -25,13 +20,13 @@
   border: none;
 }
 
-.hotel .grid {
+.Section1 .grid {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.hotel .grid li {
+.Section1 .grid li {
   height: 350px;
   padding: 20px;
   border-radius: 4px;
@@ -40,17 +35,17 @@
   background-position: center;
 }
 
-.hotel .grid li.small {
+.Section1 .grid li.small {
   flex-basis: 40%;
 }
 
-.hotel .grid li.large {
+.Section1 .grid li.large {
   flex-basis: 60%;
 }
 
 @media (max-width: 700px) {
-  .hotel .grid li.small,
-  .hotel .grid li.large {
+  .Section1 .grid li.small,
+  .Section1 .grid li.large {
     flex-basis: 100%;
   }
 }
